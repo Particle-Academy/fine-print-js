@@ -1,0 +1,70 @@
+{
+    "name": "@particle-academy/fine-print",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Zero-dependency TypeScript PDF writer, reader and renderer for agentic docs: the Node port of PHP particle-academy/fine-print (parity target 0.5.0), held to the shared fine-print/* conformance rows.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Particle-Academy/fine-print-js.git"
+    },
+    "homepage": "https://github.com/Particle-Academy/fine-print-js#readme",
+    "bugs": "https://github.com/Particle-Academy/fine-print-js/issues",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/index.d.ts",
+                "default": "./dist/index.js"
+            },
+            "require": {
+                "types": "./dist/index.d.cts",
+                "default": "./dist/index.cjs"
+            }
+        }
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "CHANGELOG.md"
+    ],
+    "sideEffects": false,
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "lint": "tsc --noEmit",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "clean": "rm -rf dist",
+        "prepublishOnly": "tsup"
+    },
+    "keywords": [
+        "pdf",
+        "pdf-writer",
+        "pdf-parser",
+        "pdf-renderer",
+        "agent",
+        "prompt-injection",
+        "fancy",
+        "human-plus"
+    ],
+    "devDependencies": {
+        "@types/node": "^22",
+        "tsup": "^8.5.0",
+        "typescript": "^5.8.0",
+        "vitest": "^4.1.12"
+    },
+    "engines": {
+        "node": ">=22"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "license": "MIT",
+    "overrides": {
+        "esbuild": "^0.28.1",
+        "source-map-js": "^1.2.2"
+    }
+}
