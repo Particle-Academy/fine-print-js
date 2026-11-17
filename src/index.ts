@@ -3,7 +3,7 @@
  *
  * Phase W0 (foundation): this package has no PDF code yet. The contract it
  * will be held to is the `fine-print/*` suites in fancy-conformance, exported
- * from the PHP reference; see AGENTS.md.
+ * from the PHP reference; see CONTRIBUTING.md.
  */
 
 /** This package's own version. Independent of PHP's (plan decision D10). */

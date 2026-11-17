@@ -8,6 +8,13 @@ and reads hostile PDFs with an agent-read guard against prompt injection.
 **Status: not released.** This repository is at its foundation (phase W0). The
 writer is the first phase to ship; until then there is nothing to install.
 
+<!-- fancy-agents-note:start -->
+> **For agents.** This package is not listed on the Fancy MCP catalog server
+> yet. The server, `https://ui.particle.academy/mcp` (streamable HTTP, no API key; MCP id
+> `fancy-ui`), lists the released Fancy packages with install commands and
+> docs. How an agent installs and uses this package is in [AGENTS.md](https://github.com/Particle-Academy/fine-print-js/blob/main/AGENTS.md).
+<!-- fancy-agents-note:end -->
+
 ## Parity
 
 This package targets **PHP fine-print 0.5.0**. Parity is measured, not claimed:
